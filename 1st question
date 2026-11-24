@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int queue[] = new int[100];
+
+        int front = 0;
+        int rear = -1;
+
+        System.out.println("Enter elements:");
+
+        for (int i = 0; i < n; i++) {
+            int element = sc.nextInt();
+            rear++;
+            queue[rear] = element;
+        }
+
+        System.out.print("Queue: ");
+        for (int i = front; i <= rear; i++) {
+            System.out.print(queue[i] + " ");
+        }
+
+        sc.close();
+    }
+}
