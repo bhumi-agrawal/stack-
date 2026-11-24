@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int queue[] = {10, 20, 30, 40, 50};
+
+        int front = 0;
+        int rear = 4;
+
+        // Dequeue operation
+        int deletedElement = queue[front];
+        front++;
+
+        System.out.println("Deleted Element: " + deletedElement);
+
+        System.out.print("Queue: ");
+        for (int i = front; i <= rear; i++) {
+            System.out.print(queue[i] + " ");
+        }
+
+        sc.close();
+    }
+}
