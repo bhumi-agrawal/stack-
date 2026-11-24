@@ -1,0 +1,11 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        int queue[] = {5, 10, 15, 20, 25};
+
+        int rear = queue.length - 1;
+
+        System.out.println("Rear Element: " + queue[rear]);
+    }
+}
